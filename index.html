@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+  <section class="white-card">
+    <section class="header-section">
+      <h1 class="notifs-title">Notifications <strong class="num-notifs">3</strong></h1>
+
+      <p class="mark-as-read">Mark all as read</p>
+    </section>
+
+    <section class="notifs-section">
+      <section class="webber one-notif">
+        <figure class="webber profile"></figure>
+        <section class="webber notif-info-sec">
+          <section class="webber paragraph-sec">
+          <p class="webber paragraph">
+            <strong class="webber name">Mark Webber</strong> reacted to your recent post <strong class="webber bold-notif">My first tournament today!</strong> 
+          </p>
+          <div class="red-dot"></div>
+          </section>
+          <p class="webber time">1m ago</p>
+        </section>
+      </section>
+
+      <section class="gray one-notif">
+        <figure class="gray profile"></figure>
+        <section class="gray notif-info-sec">
+          <section class="webber paragraph-sec">
+          <p class="gray paragraph">
+            <strong class="gray name">Angela Gray</strong> followed you<strong></strong>
+          </p>
+          <div class="red-dot"></div>
+        </section>
+          <p class="gray time">5m ago</p>
+        
+        </section>
+      </section>
+
+      <section class="thompson one-notif">
+        <figure class="thompson profile"></figure>
+        <section class="thompson notif-info-sec">
+          <section class="webber paragraph-sec">
+          <p class="thompson paragraph">
+            <strong class="thompson name">Jacob Thompson</strong> has joined your group <strong class="thompson bold-notif club">Chess Club</strong>
+          </p>
+          <div class="red-dot"></div>
+        </section>
+          <p class="thompson time">1 day ago</p>
+        </section>
+      </section>
+
+      <section class="rizky one-notif">
+        <figure class="rizky profile"></figure>
+        <section class="rizky notif-info-sec">
+          <p class="rizky paragraph">
+            <strong class="rizky name">Rizky Hasanuddin</strong> sent you a private message<strong></strong>
+          </p>
+          <p class="rizky time">5 days ago</p>
+  
+        </section>
+      </section>
+        <p class="rizky msg-content">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.</p>
+
+      <section class="smith one-notif">
+        <figure class="smith profile"></figure>
+        <section class="smith notif-info-sec">
+          <section class="smith paragraph-sec">
+          <p class="smith paragraph">
+            <strong class="smith name">Kimberly Smith</strong> commented on your picture<strong></strong>
+          </p>
+          
+        
+          <p class="smith time">1 week ago</p>
+        </section>
+          <figure class="commented-img"></figure>
+        
+        </section>
+      </section>
+
+      <section class="peterson one-notif">
+        <figure class="peterson profile"></figure>
+        <section class="peterson notif-info-sec">
+          <p class="peterson paragraph">
+            <strong class="peterson name">Nathan Peterson</strong> reacted to your recent post <strong class="peterson bold-notif">5 end-game strategies to increase your win rate</strong>
+          </p>
+          <p class="peterson time">2 weeks ago</p>
+        </section>
+      </section>
+
+      <section class="kim one-notif">
+        <figure class="kim profile"></figure>
+        <section class="kim notif-info-sec">
+          <p class="kim paragraph">
+            <strong class="kim name">Anna Kim</strong> left the group <strong class="kim bold-notif club">Chess Club</strong>
+          </p>
+          <p class="kim time">2 weeks ago</p>
+        </section>
+      </section>
+
+    </section>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gaelen</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

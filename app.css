@@ -1,0 +1,208 @@
+:root{
+    --red:  hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+    --font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    background-color: var(--very-light-grayish-blue);
+    font-family: var(--font-family);
+    color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-card{
+    background-color: var(--white);
+    height: 700px;
+    width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifs-title{
+    font-size: 23px;
+}
+
+.num-notifs{
+    background-color: var(--blue);
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.mark-as-read{
+    font-size: 15px;
+    color: var(--dark-grayish-blue);
+    margin: 0;
+}
+
+.mark-as-read:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.notifs-section{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.one-notif{
+    background-color: var(--very-light-grayish-blue);
+    display: flex;
+    font-size: 12px;
+    gap: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.one-notif.rizky, .one-notif.smith, .one-notif.peterson, .one-notif.kim{
+    background-color: white;
+}
+
+.profile{
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: contain;
+    margin: 15px;
+}
+
+
+.webber.profile{
+    background-image: url('./assets/images/avatar-mark-webber.webp');
+}
+
+.gray.profile{
+    background-image: url('./assets/images/avatar-angela-gray.webp');
+}
+
+.thompson.profile{
+    background-image: url('./assets/images/avatar-jacob-thompson.webp');
+}
+
+.rizky.profile{
+    background-image: url('./assets/images/avatar-rizky-hasanuddin.webp');
+}
+
+.smith.profile{
+    background-image: url('./assets/images/avatar-kimberly-smith.webp');
+}
+
+.peterson.profile{
+    background-image: url('./assets/images/avatar-nathan-peterson.webp');
+}
+
+.kim.profile{
+    background-image: url('./assets/images/avatar-anna-kim.webp');
+}
+
+.notif-info-sec{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.paragraph-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name{
+    color: var(--very-dark-blue);
+}
+
+.name:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.paragraph{
+    color: var(--dark-grayish-blue);
+    margin: 0;
+}
+
+.club{
+    color: var(--blue);
+}
+
+.bold-notif:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.red-dot{
+    height: 7px;
+    width: 7px;
+    background-color: var(--red);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.commented-img{
+    background-image: url('./assets/images/image-chess.webp');
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    margin: 10px;
+}
+
+.smith.notif-info-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.smith.paragraph-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.msg-content{
+    color: var(--dark-grayish-blue);
+    border: 1px solid var(--light-grayish-blue-2);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 0;
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+.msg-content:hover{
+    background-color: var(--light-grayish-blue-1);
+    cursor: pointer;
+}
+
+.time{
+    color: var(--grayish-blue);
+    margin: 0;
+}
+
+@media screen and (max-width: 375px){
+    .white-card{
+        width: 350px;
+        height: 800px;
+    }
+}
